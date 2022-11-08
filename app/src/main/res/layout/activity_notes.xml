@@ -20,14 +20,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="Hide me here"
             android:backgroundTint="#008194"
             android:shadowColor="#000000"
+            android:fontFamily="@font/permanent_marker"
             android:shadowDx="8.0"
             android:shadowDy="8.0"
             android:shadowRadius="8.0"
-            android:textSize="35dp"
-            android:textColor="#FFEB3B"/>
+            android:text="Hide me here"
+            android:textColor="#FFEB3B"
+            android:textSize="35dp" />
 
         <ImageView
             android:id="@+id/deleteAll"
@@ -60,6 +61,7 @@
         android:layout_marginRight="10dp"
         android:backgroundTint="#008194"
         android:shadowColor="#000000"
+        android:fontFamily="@font/permanent_marker"
         android:shadowDx="8.0"
         android:shadowDy="8.0"
         android:shadowRadius="8.0"
