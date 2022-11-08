@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455357"
+    android:padding="10dp"
+    tools:context=".NotesActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hideMeHereTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Hide me here"
+            android:backgroundTint="#008194"
+            android:shadowColor="#000000"
+            android:shadowDx="8.0"
+            android:shadowDy="8.0"
+            android:shadowRadius="8.0"
+            android:textSize="35dp"
+            android:textColor="#FFEB3B"/>
+
+        <ImageView
+            android:id="@+id/deleteAll"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_new"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/rl1"
+        />
+
+    <Button
+        android:id="@+id/btn_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#008194"
+        android:shadowColor="#000000"
+        android:shadowDx="8.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="8.0"
+        app:cornerRadius="50dp"
+        app:strokeColor="#fefe34"
+        app:strokeWidth="3dp"
+        android:text="NEW"
+        android:textColor="#FFEB3B"
+        android:textSize="16dp"/>
+
+
+</RelativeLayout>

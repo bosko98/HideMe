@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455357"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_appName"
+        android:layout_width="334dp"
+        android:layout_height="92dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="24dp"
+        android:backgroundTint="#008194"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="8.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="8.0"
+        android:text="Hide me here"
+        android:textColor="#FFEB3B"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use your fingerprint to login"
+        android:textColor="#FFEB3B" />
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="125dp"
+        android:layout_marginVertical="20dp"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable"
+        app:tint="#FFEB3B" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="158dp"
+        android:layout_height="89dp"
+        android:layout_marginVertical="12dp"
+        android:backgroundTint="#008194"
+        android:shadowColor="#000000"
+        android:shadowDx="8.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="8.0"
+        android:text="Login"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:cornerRadius="50dp"
+        app:strokeColor="#fefe34"
+        app:strokeWidth="5dp" />
+
+
+</LinearLayout>

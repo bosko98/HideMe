@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455357"
+    android:padding="10dp"
+    tools:context=".NoteUpdateActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <TextView
+            android:id="@+id/hideMeHereTitle"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#008194"
+            android:shadowColor="#000000"
+            android:shadowDx="8.0"
+            android:shadowDy="8.0"
+            android:shadowRadius="8.0"
+            android:text="Hide me here"
+            android:textColor="#FFEB3B"
+            android:textSize="35dp"/>
+
+        <ImageView
+            android:id="@+id/btn_update"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            app:tint="#FFEB3B" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner_blue"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:alpha="0.9"
+            android:background="#455357"
+            android:hint="Title"
+            android:padding="10dp"
+            android:shadowColor="#000000"
+            android:shadowDx="8.0"
+            android:shadowDy="8.0"
+            android:shadowRadius="8.0"
+            android:textColor="#FFEB3B"
+            android:textColorHint="#FFEB3B" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:alpha="0.9"
+            android:background="#455357"
+            android:gravity="top"
+            android:hint="Description"
+            android:lines="10"
+            android:padding="10dp"
+            android:textColor="#FFEB3B"
+            android:textColorHint="#FFEB3B" />
+
+    </LinearLayout>
+
+</RelativeLayout>
