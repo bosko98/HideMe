@@ -32,13 +32,13 @@
 
         <ImageView
             android:id="@+id/deleteAll"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="43dp"
+            android:layout_height="45dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-
-            app:tint="@color/white" />
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            app:tint="#FFEB3B" />
 
     </RelativeLayout>
 
@@ -71,6 +71,8 @@
         android:text="NEW"
         android:textColor="#FFEB3B"
         android:textSize="16dp"/>
+
+
 
 
 </RelativeLayout>
