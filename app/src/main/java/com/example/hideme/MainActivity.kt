@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 super.onAuthenticationSucceeded(result)
                 notifyUser("Authentication Succeeded")
 
+                // Starting next activity upon successful authentication
                 startNotesActivity()
 
             }
@@ -54,12 +55,10 @@ class MainActivity : AppCompatActivity() {
             // This creates a dialog of biometric auth and
             // it requires title , subtitle ,
             // and description
-            // In our case there is a cancel button by
-            // clicking it, it will cancel the process of
-            // fingerprint authentication
+
             val biometricPrompt = BiometricPrompt.Builder(this)
-                .setTitle("Title of Prompt")
-                .setSubtitle("Subtitle")
+                .setTitle("Put a finger on sensor")
+                .setSubtitle("Authentication")
                 .setDescription("Uses FP")
                 .setNegativeButton("Cancel", this.mainExecutor, DialogInterface.OnClickListener { dialog, which ->
                     notifyUser("Authentication Cancelled")
@@ -70,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // function that starts notes activity
     private fun startNotesActivity(){
         var intent: Intent = Intent(this, NotesActivity::class.java)
         startActivity(intent)
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         return cancellationSignal as CancellationSignal
     }
 
-    // it checks whether the app the app has fingerprint permission
+    // does the app have a fingerprint permission?
     @RequiresApi(Build.VERSION_CODES.M)
     private fun checkBiometricSupport(): Boolean {
         val keyguardManager = getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
@@ -101,8 +101,8 @@ class MainActivity : AppCompatActivity() {
         } else true
     }
 
-    // this is a toast method which is responsible for showing toast
-    // it takes a string as parameter
+    // this is a toast method which is responsible for showing messages
+    // string as parameter
     private fun notifyUser(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
