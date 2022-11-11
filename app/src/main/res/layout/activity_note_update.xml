@@ -27,7 +27,8 @@
             android:shadowRadius="8.0"
             android:text="Hide me here"
             android:textColor="#FFEB3B"
-            android:textSize="35dp"/>
+            android:textSize="35sp"
+            tools:ignore="HardcodedText"/>
 
         <ImageView
             android:id="@+id/btn_update"
@@ -35,7 +36,7 @@
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             app:srcCompat="@android:drawable/ic_menu_save"
             app:tint="#FFEB3B" />
@@ -71,7 +72,8 @@
             android:shadowDy="8.0"
             android:shadowRadius="8.0"
             android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B" />
+            android:textColorHint="#FFEB3B"
+            tools:ignore="HardcodedText"/>
 
         <EditText
             android:id="@+id/et_description"
@@ -85,7 +87,8 @@
             android:lines="10"
             android:padding="10dp"
             android:textColor="#FFEB3B"
-            android:textColorHint="#FFEB3B" />
+            android:textColorHint="#FFEB3B"
+            tools:ignore="HardcodedText"/>
 
     </LinearLayout>
 

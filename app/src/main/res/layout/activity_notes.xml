@@ -28,7 +28,8 @@
             android:shadowRadius="8.0"
             android:text="Hide me here"
             android:textColor="#FFEB3B"
-            android:textSize="35dp" />
+            android:textSize="35sp"
+            tools:ignore="HardcodedText"/>
 
         <ImageView
             android:id="@+id/deleteAll"
@@ -36,7 +37,7 @@
             android:layout_height="45dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             app:srcCompat="@android:drawable/ic_menu_delete"
             app:tint="#FFEB3B" />
 
@@ -58,7 +59,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="#008194"
         android:shadowColor="#000000"
         android:fontFamily="@font/permanent_marker"
@@ -70,7 +71,8 @@
         app:strokeWidth="3dp"
         android:text="NEW"
         android:textColor="#FFEB3B"
-        android:textSize="16dp"/>
+        android:textSize="16sp"
+        tools:ignore="HardcodedText"/>
 
 
 
